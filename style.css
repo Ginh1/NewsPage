@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+ul, .navbar{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-chinh .nav-phu {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+h5{
+  font-weight:lighter ;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-chinh>a {
+  padding: 4px 0;
+}
+
+.nav-chinh {
+  position: relative;
+}
+
+.nav-chinh>a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-phu {
+  display: none;
+  box-shadow: 2px 2px;
+}
+
+.nav-chinh .nav-phu li:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-chinh:hover>.nav-phu {
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  width: auto;
+  width: 200px;
+}
+
+.nav-chinh .nav-phu li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.col-xl-3 .col-xl-7 {
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+
+  /* Ẩn phần HTML khác */
+  .d-lg-flex,
+  .d-lg-none {
+    display: none !important;
+  }
+
+  /* Hiển thị phần HTML bạn muốn */
+  .justify-content-center:not(.justify-content-lg-start) {
+    justify-content: center !important;
+  }
+}

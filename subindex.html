@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/fontawesome-free-6.3.0-web/css/all.css">
+</head>
+
+<body>
+  <!--Main Navigation-->
+<header class=" sticky-top">
+    <!-- Jumbotron -->
+    <div class="py-1 text-center bg-white border-bottom ">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Right elements -->
+          <div class="col-md-7 d-flex justify-content-center justify-content-md-start align-items-center ">
+            <a class="text-reset me-3  " href="index.html">
+              <img src="assets/logo.svg" alt="">
+            </a>
+            <a class="text-reset me-3 opacity-50 d-none d-md-flex border-start ps-3" href="#">
+              Chủ nhật, 9/4/2023
+            </a>
+          </div>
+          <div
+            class="col-lg-5 d-flex justify-content-center justify-content-md-end align-items-center d-none d-lg-flex">
+            <form class="d-flex input-group w-auto my-auto mb-3 mb-md-0">
+              <input autocomplete="off" type="search" class="form-control rounded-pill" placeholder="Search" />
+
+            </form>
+            <a class="text-reset me-3" href="#">
+
+            </a>
+            <a class="text-reset me-3" href="#">
+
+            </a>
+
+            <!-- Notification -->
+            <div class="dropdown d-none d-lg-flex">
+              <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLinkNoti"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bell" id="bell-icon"></i>
+                <script>
+                  var bellIcon = document.getElementById("bell-icon");
+                  bellIcon.onclick = function() {
+                    alert("Bạn sẽ được thông báo mỗi khi có bài mời");
+                  };
+                </script>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLinkNoti"
+                id="navbarDropdownMenuNoti">
+                <li><a class="dropdown-item" href="#">Some news</a></li>
+                <li><a class="dropdown-item" href="#">Another news</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+
+            <!-- User -->
+            <div class="dropdown d-none d-lg-flex">
+              <a class="text-reset dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                id="navbarDropdownMenuLinkUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/logo-user.jpg" class="rounded-circle" height="22" alt="" loading="lazy" />
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLinkUser">
+                <li ><a class="dropdown-item border-bottom " href="#"><img src="assets/logo-user.jpg" class="rounded-circle pe-2 " height="40" alt="...">Nguyễn Quang Vinh</a></li>
+                <li><a class="dropdown-item" href="#">Thông tin chung</a></li>
+                <li><a class="dropdown-item" href="#">Ý kiến của bạn</a></li>
+                <li><a class="dropdown-item" href="#">Tin đã lưu</a></li>
+                <li><a class="dropdown-item border-bottom" href="#">Tin đã xem</a></li>
+                <li><a class="dropdown-item" href="index.html">Thoát</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-xl navbar-light  bg-white d-none d-xl-block ">
+      <!-- Container wrapper -->
+      <div class="container-fluid  justify-content-center bg-white border-bottom align-items-center">
+        <!-- Left elements -->
+        <ul class="d-flex justify-content-between ">
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Thời sự </a>
+            <ul class="nav-phu">
+              <li>Chính trị</li>
+              <li>Dân sinh</li>
+              <li>Lao động - việc làm</li>
+              <li>Giao thông</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Góc nhìn</a>
+            <ul class="nav-phu">
+              <li>Bình luận nhiều</li>
+              <li>Chính trị & chính sách</li>
+              <li>Y tế & Sức khỏe</li>
+              <li>Kinh doanh & Quản trị</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Thế giới</a>
+            <ul class="nav-phu">
+              <li>Tư liệu</li>
+              <li>Phân tích</li>
+              <li>Người việt 5 châu</li>
+              <li>Cuộc sống đó đây</li>
+              <li>Quân sự</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Video</a>
+            <ul class="nav-phu">
+              <li>Thời sự</li>
+              <li>Nhịp sống</li>
+              <li>Food</li>
+              <li>Tôi kể</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Podcast</a>
+            <ul class="nav-phu">
+              <li>Tài chính cá nhân</li>
+              <li>Tiền là gì</li>
+              <li>Giải mã</li>
+              <li>Hộp đen </li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="subnav.html">Kinh doanh</a>
+            <ul class="nav-phu">
+              <li>Quốc tế</li>
+              <li>Doanh Nghiệp</li>
+              <li>Chứng khoán</li>
+              <li>Bất động sản</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Khoa học</a>
+            <ul class="nav-phu">
+              <li>Khoa học trong nước </li>
+              <li>Tin tức </li>
+              <li>Phát minh</li>
+              <li>Ứng dụng</li>
+              <li>Thế giới tự nhiên</li>
+              <li>Thưởng thức</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Giải trí</a>
+            <ul class="nav-phu">
+              <li>Giới sao</li>
+              <li>Video</li>
+              <li>Phim</li>
+              <li>Nhạc</li>
+              <li>Thời trang</li>
+              <li>Làm đẹp</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Thể thao</a>
+            <ul class="nav-phu">
+              <li>SEA game 32</li>
+              <li>Bóng đá</li>
+              <li>Lịch thi đấu</li>
+              <li>Tenis</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Pháp luật</a>
+            <ul class="nav-phu">
+              <li>Hồ sơ phá án</li>
+              <li>Tư vấn</li>
+              <li>Video</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Giáo dục</a>
+            <ul class="nav-phu">
+              <li>Tin tức</li>
+              <li>Tuyển sinh</li>
+              <li>Chân dung</li>
+              <li>Du học</li>
+              <li>Học tiếng anh</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Sức khỏe</a>
+            <ul class="nav-phu">
+              <li>Chính trị</li>
+              <li>Dân sinh</li>
+              <li>Lao động - việc làm</li>
+              <li>Giao thông</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Đời sống</a>
+            <ul class="nav-phu">
+              <li>Chính trị</li>
+              <li>Dân sinh</li>
+              <li>Lao động - việc làm</li>
+              <li>Giao thông</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Du lịch</a>
+            <ul class="nav-phu">
+              <li>Chính trị</li>
+              <li>Dân sinh</li>
+              <li>Lao động - việc làm</li>
+              <li>Giao thông</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Số hóa</a>
+            <ul class="nav-phu">
+              <li>Chính trị</li>
+              <li>Dân sinh</li>
+              <li>Lao động - việc làm</li>
+              <li>Giao thông</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Xe</a>
+            <ul class="nav-phu">
+              <li>Chính trị</li>
+              <li>Dân sinh</li>
+              <li>Lao động - việc làm</li>
+              <li>Giao thông</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 nav-chinh "><a class="fw-bold" href="">Ý kiến</a>
+            <ul class="nav-phu">
+              <li>Chính trị</li>
+              <li>Dân sinh</li>
+              <li>Lao động - việc làm</li>
+              <li>Giao thông</li>
+            </ul>
+          </li>
+          <li class="d-inline px-1 opacity-50 dropdown">
+            Tất cả <i class="fas fa-bars"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <!--Main layout-->
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <nav class="d-flex justify-content-between" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Kinh doanh</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Vĩ mô</li>
+            </ol>
+            <div class="time opacity-50">Chủ nhật, 9/4/2023, 21:30 (GMT+7)</div>
+          </nav>
+          <h2>19 tập đoàn, tổng công ty nhà nước lãi hơn 3,5 tỷ USD năm 2022
+          </h2>
+          <p style="font-size: 18px;">19 tập đoàn, tổng công ty nhà nước lãi 3,5 tỷ USD năm 2022 - tăng 23% so với năm trước, song Thủ tướng nhìn nhận hiệu quả chưa tương xứng với nguồn lực. <br><br>
+  
+            Sáng 18/3, Thủ tướng Phạm Minh Chính chủ trì hội nghị làm việc với Ủy ban Quản lý vốn nhà nước tại doanh nghiệp (siêu ủy ban) và 19 tập đoàn, tổng công ty. <br><br>
+            
+            Ủy ban này cho biết đến cuối năm 2022, tổng vốn chủ sở hữu của 19 tập đoàn, tổng công ty khoảng 1,73 triệu tỷ đồng, trong đó công ty mẹ chiếm hơn 55% (955.000 tỷ). Tổng tài sản hợp nhất các doanh nghiệp này trên 2,44 triệu tỷ đồng, công ty mẹ giữ gần 67%, tức hơn 1,63 triệu tỷ. <br><br>
+            
+            Như vậy, vốn nắm giữ của các "ông lớn" khoảng 63% tổng vốn chủ sở hữu và 65% tài sản các doanh nghiệp nhà nước trên cả nước. <br><br>
+            
+            Năm ngoái, tổng doanh thu của các tập đoàn, tổng công ty đạt gần 1,6 triệu tỷ đồng, tăng 17,5% và lợi nhuận trước thuế gần 83.170 tỷ đồng (trên 3,5 tỷ USD), tăng hơn 23% so với 2021. Các doanh nghiệp nộp ngân sách hơn 191.780 tỷ đồng, tăng 8%. <br><br>
+            Tuy nhiên, theo Thủ tướng, nguồn lực lớn nhưng đóng góp của các doanh nghiệp chưa tương xứng; hiệu quả sản xuất kinh doanh thấp so với nguồn lực nắm giữ. Tổng lãi trước thuế năm 2022 chỉ bằng 75,16% so với 2018.</p>
+        </div>
+        <div class="col-lg-3 ">
+          <h5>Xem nhiều</h5>
+          <div class="row border-bottom">
+            <div class="col-lg-5 p-0" >
+              <img src="assets/main-left1.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-lg-7 pe-0" >
+              <p>Cách nữ quái kiếm mỗi ngày 20 triệu đồng từ lừa đảo tín dụng</p>
+            </div>
+          </div>
+          <div class="row border-bottom mt-3">
+            <div class="col-lg-5 p-0" >
+              <img src="assets/xemNhieu/anh1.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="col-lg-7 pe-0" >
+              <p>18 năm kiên trì 'rửa tội' bán dâm cho con gái 14 tuổi </p>
+            </div>
+          </div>
+          <div class="row border-bottom mt-3">
+            <div class="col-lg-5 p-0" >
+              <img src="assets/xemNhieu/anh2.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="col-lg-7 pe-0" >
+              <p>Người nước ngoài gây án tại Việt Nam, xét xử ở đâu? </p>
+            </div>
+          </div>
+          <div class="row border-bottom mt-3">
+            <div class="col-lg-5 p-0" >
+              <img src="assets/xemNhieu/anh3.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="col-lg-7 pe-0" >
+              <p>Lịch sử ra đời của Toà án Quốc tế về Luật biển </p>
+            </div>
+          </div>
+          <div class="row border-bottom mt-3">
+            <div class="col-lg-5 p-0" >
+              <img src="assets/xemNhieu/anh4.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="col-lg-7 pe-0" >
+              <p>Quảng Nam kiểm tra đồng loạt điểm giao dịch của F88 </p>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-lg-5 p-0" >
+              <img src="assets/main-left1.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-lg-7 pe-0" >
+              <p>Cách nữ quái kiếm mỗi ngày 20 triệu đồng từ lừa đảo tín dụng</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="dropdown.js"></script>
+  <script src="assets/jquery-3.6.4.min.js"></script>
+  <script src="assets/bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
